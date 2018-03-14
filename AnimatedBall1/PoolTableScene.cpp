@@ -3,8 +3,8 @@
 namespace
 {
 	// Скорость, пикселей в секунду
-	constexpr float BALL_SPEED_X = 250;
-	constexpr float BALL_SPEED_Y = 360;
+	constexpr float BALL_SPEED_X = 200;
+	constexpr float BALL_SPEED_Y = 200;
 
 	constexpr float BALL_SIZE = 40;
 }
@@ -37,18 +37,18 @@ void PoolTableScene::update(float deltaSeconds)
 		m_ballPosition.x = m_bounds.rightEdge() - m_ballSize.x;
 		m_ballSpeed.x = -m_ballSpeed.x;
 	}
-	/*
-	if (m_ballPosition.y < m_bounds.leftEdge())
+	
+	if (m_ballPosition.y < m_bounds.bottomEdge())
 	{
-		m_ballPosition.y = m_bounds.leftEdge();
+		m_ballPosition.y = m_bounds.bottomEdge();
 		m_ballSpeed.y = -m_ballSpeed.y;
 	}
-	else if (m_ballPosition.y > m_bounds.rightEdge() - m_ballSize.y)
+	else if (m_ballPosition.y > m_bounds.topEdge() - m_ballSize.y)
 	{
-		m_ballPosition.y = m_bounds.rightEdge() - m_ballSize.y;
+		m_ballPosition.y = m_bounds.topEdge() - m_ballSize.y;
 		m_ballSpeed.y = -m_ballSpeed.y;
 	}
-	*/
+	
 
 }
 

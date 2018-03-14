@@ -27,6 +27,7 @@ void PoolTableScene::update(float deltaSeconds)
 	m_ballPositionX += BALL_SPEED_X * deltaSeconds;
 	m_ballPositionY += BALL_SPEED_Y * deltaSeconds;
 
+	
 	if (m_ballPosition.x < m_bounds.leftEdge())
 	{
 		m_ballPosition.x = m_bounds.leftEdge();
@@ -45,7 +46,7 @@ void PoolTableScene::update(float deltaSeconds)
 	}
 	else if (m_ballPosition.y > m_bounds.topEdge() - m_ballSize.y)
 	{
-		m_ballPosition.y = m_bounds.topEdge() - m_ballSize.y;
+		m_ballPosition.y = m_bounds.topEdge() + m_ballSize.y;
 		m_ballSpeed.y = -m_ballSpeed.y;
 	}
 	

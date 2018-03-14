@@ -115,19 +115,9 @@
     </QtRcc>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AnimatedBall1.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="PoolTableScene.cpp" />
     <ClCompile Include="RasterWindow.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="AnimatedBall1.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="AnimatedBall1.ui" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="AnimatedBall1.qrc" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="RasterWindow.h" />

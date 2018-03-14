@@ -33,9 +33,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="AnimatedBall1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="RasterWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -44,22 +41,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="AnimatedBall1.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="RasterWindow.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="AnimatedBall1.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="AnimatedBall1.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PoolTableScene.h">

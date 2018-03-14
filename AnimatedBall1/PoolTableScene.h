@@ -18,6 +18,8 @@ private:
 	const Vector2f m_ballSize;
 	const RectF m_bounds;
 
-	float m_ballPositionX = 0;
-	float m_ballPositionY = 0;
+	float m_ballPositionX = 50;
+	float m_ballPositionY = 50;
+	bool m_positivX = true;
+	bool m_positivY = true;
 };

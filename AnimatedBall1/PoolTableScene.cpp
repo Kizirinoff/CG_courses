@@ -1,4 +1,5 @@
 #include "PoolTableScene.h"
+#include "qdebug.h"
 
 namespace
 {
@@ -24,9 +25,10 @@ void PoolTableScene::update(float deltaSeconds)
 	// ћетод УPoolTableScene::updateФ станет сложнее:
 	// после пересчЄта координат, хранимых в m_ballPosition, 
 	// мы должны проверить два случа€
-	m_ballPositionX += BALL_SPEED_X * deltaSeconds;
-	m_ballPositionY += BALL_SPEED_Y * deltaSeconds;
+	m_ballPosition.x += BALL_SPEED_X * deltaSeconds;
+	m_ballPosition.y += BALL_SPEED_Y * deltaSeconds;
 
+	qDebug() << m_ballPosition.x << ", " << m_ballPosition.y;
 	
 	if (m_ballPosition.x < m_bounds.leftEdge())
 	{
@@ -49,8 +51,6 @@ void PoolTableScene::update(float deltaSeconds)
 		m_ballPosition.y = m_bounds.topEdge() - m_ballSize.y;
 		m_ballSpeed.y = -m_ballSpeed.y;
 	}
-	
-
 }
 
 void PoolTableScene::redraw(QPainter& painter)

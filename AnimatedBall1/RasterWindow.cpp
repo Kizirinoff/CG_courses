@@ -75,13 +75,14 @@ void RasterWindow::renderLater()
 }
 void RasterWindow::updateScene()
 {
+	const float MAX_INTERVAL = 0.1f;
 	const float elapsedSeconds = float(m_updateTimer.elapsed()) / 1000.f;
 
 	// Пропуск обновления в случае, если таймер не успел засечь прошедшее время.
 	if (elapsedSeconds > 0)
 	{
 		m_updateTimer.restart();
-		m_scene->update(elapsedSeconds);
+		m_scene->update(std::min(elapsedSeconds, MAX_INTERVAL));
 	}
 }
 

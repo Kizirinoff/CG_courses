@@ -3,6 +3,7 @@
 #include <QtGui/QPainter>
 #include "Vector2f.h"
 #include "RectF.h"
+#include <iostream>
 //  ласс PoolTableScene реализует сцену биль€рдного стола, с шариками и стенками.
 class PoolTableScene
 {
